@@ -10,13 +10,15 @@ export class LineCallBackComponent implements OnInit {
   mPhoneNumber = '';
   mIDCard = '';
   mTokenID = '';
+  mState = '';
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.route.queryParams.subscribe((params) => {
       console.log('Line Param :' + params);
-      this.mTokenID = params.access_token;
+      this.mTokenID = params.code;
+      this.mState = params.state;
       console.log('access_token:' + this.mTokenID);
     });
   }
