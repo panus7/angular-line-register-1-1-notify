@@ -8,8 +8,8 @@ const routes: Routes = [
   { path: 'linecallback', component: LineCallBackComponent },
 ];
 
-@NgModule({ 
-  imports: [RouterModule.forRoot(routes, { useHash: true })],
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

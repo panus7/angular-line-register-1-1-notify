@@ -1,1 +1,13 @@
-hi call back
+<div class="container">
+  <h2>Update Information</h2>
+  Your TokenID : {{ mTokenID }} <br>
+  <input placeholder="Phone Number" [(ngModel)]="mPhoneNumber" /> &nbsp;
+  <input placeholder="IDCard Number" [(ngModel)]="mIDCard" /><br><br>
+  <button
+    type="button"
+    class="btn btn-w-m btn-primary"
+    (click)="UpdateLineRegister()"
+  >
+    Update Information
+  </button>
+</div>
